@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/html5reset.css">
+    <link href="dist/css/lightbox.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css">
+    <title>Han Zheng</title>
+</head>
+<body>
+    <div class="skip"><a href="#main-content">Skip to Main Content</a></div>
+    <header>
+        <a class="logo__link" href="index.html">Han Zheng</a>
+        <div class="menu_bars">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+        <nav>
+            <ul class="nav_list">
+                <li><a href = "index.html" >Home</a></li>
+                <li class="active"><a href = "resume.html">Resume</a></li>
+                <li><a href = "life.html">Life</a></li>               
+            </ul>
+        </nav>
+    </header>
+
+    <main id = "main-content" style="display:block;">
+        <div class="container">
+            <div class="edu">
+                <h2>Education</h2>
+                <div class="item">
+                    <div class="photo">
+                        <div>
+                            <img src="images/umich.png" alt="UMich Logo" />
+                            <span>
+                                Aug 2022 <br>
+                                &#9662;<br>
+                                Apr 2024
+                            </span>
+                        </div>
+                    </div>
+                    <div class="details">
+                        <div>
+                            <h2>University of Michigan, Ann Arbor, MI</h2>
+                            <h2>Master of Science in Electrical & Computer Engineering (Intergrated Circuit and VLSI track)</h2>
+                            <button class="toggle-button" onclick="toggleVisibility('course-1')">Courses taken</button>
+                            <ul id="course-1" class="course" style="display: none;">
+                                <li>EECS427 VLSI Design I</li>
+                                <li>EECS413 Monolith Amplifier Circuits</li>
+                                <li>EECS470 Computer Architecture</li>
+                                <li>SI506 Programming I</li>
+                                <li>EECS598 VLSI for Machine Learning and Wireless Communications</li>
+                                <li>SI539 Web Design</li>
+                                <li>EECS627 VLSI Design II</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="photo">
+                        <div>
+                            <img src="images/liver.jpeg" alt="liverpool Logo" />
+                            <span>
+                                Sep 2018 <br>
+                                &#9662;<br>
+                                Jul 2022
+                            </span>
+                        </div>
+                    </div>
+                    <div class="details">
+                        <div>
+                            <h2>University of Liverpool, UK</h2>
+                            <h2>Bachelor of Engineering in Telecommunications Engineering, First Class</h2>
+                            <ul>
+                                <li>Relevant course: Digital System Design with HDL, Electronics for Communications, Embedded Computer Systems, Electronic Circuits and Systems, Digital Electronics</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="photo">
+                        <div>
+                            <img src="images/xjtlu.jpeg" alt="XJTLU Logo" />
+                            <span>
+                                Sep 2018 <br>
+                                &#9662;<br>
+                                Jul 2022
+                            </span>
+                        </div>
+                    </div>
+                    <div class="details">
+                        <div>
+                            <h2>Xi'an Jiaotong-Liverpool University, China</h2>
+                            <h2>Bachelor of Engineering in Telecommunications Engineering, GPA: 3.86/4.0</h2>
+                            <ul>
+                                <li>Honors & Awards: Outstanding Student (2020), University Academic Excellence Award (Top 5%, Year 2020/2021)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="edu">
+                <h2>Projects</h2>
+                <div>
+                    <h3>A Two-staged 16-bit RISC Processor Integrated with a Fully Customized Near-Memory Computing SRAM, Umich <span style="float: right;">2023</span></h3>
+                    <ol>
+                        <li>Finished schematics, layout design and verification for a 16-bit 2-staged pipelined RISC processor including a Register file, a logarithmic
+                            shifter, and ALU with Carry-Select Adder</li>
+                        <li>Using Innovus for APR and physical design of the RISC Processor, complete chip-level integration of subblock and pad ring</li>
+                        <li>Designed an in/near-memory compute SRAM with Bit-Serial Logic/Arithmetic Operations for in/near-memory Computing</li>
+                    </ol>
+                </div>
+                <div>
+                    <h3>An R10K-style, Two-way superscalar, RISC-V Processor, UMich<span style="float: right;">2022</span></h3>
+                    <ol>
+                        <li>Designed and synthesized a MIPS R10K style renaming, Out-of-Order microprocessor supporting RISC-V ISA</li>
+                        <li>Implemented 2-way superscalar with branch prediction, Load and Store Queue and Victim Caches</li>
+                        <li>Validated and integrated components such as I-cache, D-cache, Reservation Station, Reorder Buffer, Physical Register File, Free List</li>
+                        <li>Completed the project with System Verilog, synthesized under 20ns clock period with average CPI=3.4</li>
+                    </ol>
+                </div>
+                <div>
+                    <h3>An Automatic Gain Control (AGC) Amplifier for Ultra Wideband Applications, UMich<span style="float: right;">2022</span></h3>
+                    <ol>
+                        <li>Designed an AGC system consisting of Variable Gain Amplifier (VGA), Peak Detector, Error Amplifier, Loop Filter and Bandgap Voltage Reference using Cadence Virtuoso in CMOS IBM 130nm process with 2.84mW power consumption</li>
+                        <li>Achieved the VGA performance with 26.5dB gain range and 460MHZ bandwidth, the 2-stage operational amplifier with 53dB gain, 102.52MHz GBW and 60.325° phase margin under miller compensation</li>
+                        <li>Analyzed and calculated transistor sizing by specification and opeartion mode, compressed the AGC system overall gain to be stable with the closed-loop feedback to the control voltage of VGA</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="edu">
+                <h2>Professional experience</h2>
+                <div>
+                    <h3>Summer Undergraduate Research Fellowships, XJTLU<span style="float: right;">2021</span></h3>
+                    <ol>
+                        <li>Participated in a team of 5 on the investigation of GaN-based power IC (PMICs) from literature reviews, simulations, IC fabrication to characteristics analysis</li>
+                        <li>Reviewed, classified, and summarized publications on Gate Driver to evaluate and compare cutting-edge methodologies</li>
+                        <li>Designed and conducted simulation analysis on standard cell logic circuits in GaN process for control and drving circuit design such as NAND, NOR, DFF logic gate</li>
+                        <li>Validated the performance of IC chips in terms of rising time, falling time, dV/dt, di/dt and the voltage change using probe stations and semiconductor analyzer; enhanced performance by decreasing the logic low voltage from 3-4V to 1.4V</li>
+                        <li>Utilized instruments such as photolithography machine to fabricate the IC chip in cleanrooms</li>
+                    </ol>
+                </div>
+                <div>
+                    <h3>China United Network Communications Group Co.<span style="float: right;">2019</span></h3>
+                    <ol>
+                        <li>Conducted regular monitoring and maintenance of mobile communication signals using professional tools and equipments</li>
+                        <li>Detected signal jammers in places such as underground parking lots and cooperated with the State Radio Regulatory Commission to remove illegal signal amplifiers</li>
+                        <li>Tested communication quality including WCDMA and LTE by using the Pioneer APP while cooperating with staff from Huawei and Ericsson in order to address a wide range of client concerns</li>
+                        <li>Measured the network quality in 3 new regions and authored reports recommending the construction department to build base stations</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="edu">
+                <h2>Skills</h2>
+                <p>Technical: Python, Cadence Virtuoso, System Verilog, Verilog, C, MATLAB, LaTeX, ARM assembly language, Advanced Design System (ADS), Origin, LTspice, AHDL, Microsoft Office</p>
+                <p>Languages: Mandarin (Native), English (Advanced)</p>
+            </div>
+            <div class="resume">
+                <a href="file/Zheng_Han_resume.pdf">Download Resume</a>
+            </div>
+        </div>
+    </main>
+    <footer style="display:block;">
+        <p class="thanks">
+          Thanks for visiting! <i></i>
+        </p>
+        <p> &copy; Han Zheng </p>
+        <a href="#main-content">Back to Top</a>
+    </footer>
+    <script src="dist/js/lightbox-plus-jquery.js"></script>
+    <script src="js/toggle.js"></script>
+    <script src="https://kit.fontawesome.com/0f891d3f87.js" crossorigin="anonymous"></script>
+    <script src="js/animate.js"></script>
+</body>
+</html>

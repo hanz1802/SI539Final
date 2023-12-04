@@ -9,6 +9,7 @@ p{
 }
 .about p a{
   color: #b509ac;
+  text-decoration: underline;
   /* color: #52abc8; */
 }
 /* header */
@@ -280,6 +281,9 @@ img, video {
   box-sizing: border-box;
   border-radius: 15px;
   border: solid 2px rgba(0,0,0,0.2);
+}
+.cards__inner a{
+  text-decoration: underline;
 }
 /* --------------------------- */
 .mixbutton{

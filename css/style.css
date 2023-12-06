@@ -12,6 +12,11 @@ p{
   text-decoration: underline;
   /* color: #52abc8; */
 }
+a:focus {
+  /* outline: thin dotted #f89406; */
+  outline: 5px auto #f89406;
+  /* outline-offset: -2px */
+}
 /* header */
 header {
   display: flex;
@@ -86,6 +91,7 @@ nav li a:hover, nav li a:focus {
   background-position: 50.00% 35%;
   background-repeat: no-repeat;
   background-size: cover;
+  background-color: #000000;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -94,7 +100,7 @@ nav li a:hover, nav li a:focus {
   text-align: center;
   font-size: 50px;
   font-family: 'Times New Roman', Times, serif;
-  color: black;
+  color: #f1f1f1;
   background-color: transparent;
 }
 

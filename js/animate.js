@@ -38,12 +38,10 @@ document.querySelector('.menu_bars').addEventListener('click', function() {
     this.classList.toggle("change")
 
     var pages = document.querySelector(".nav_list")
-    // var socials = document.querySelector(".socials")
     var nav = document.querySelector("header")
     var name = document.querySelector(".logo__link")
 
     pages.classList.toggle("change")
-    // socials.classList.toggle("change")
     nav.classList.toggle("change")
     name.classList.toggle("change")
 

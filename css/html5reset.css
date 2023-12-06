@@ -102,8 +102,3 @@ meter {
     -webkit-user-drag: element;
 }
 
-/* Revert Modal native behavior */
-:where(dialog:modal) {
-    all: revert;
-    box-sizing: border-box;
-}
